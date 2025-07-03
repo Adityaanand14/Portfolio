@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background-color: #333;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+    nav .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 10px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+    nav .hire-btn, .cv-btn {
+      background-color: #ff6600;
+      color: white;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav .hire-btn:hover, .cv-btn:hover {
+      background-color: #ff8533;
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #2b2b2b;
+      color: white;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .projects, .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #ff6600;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #ff8533;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">My Portfolio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#services">Skills & Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div>
+      <a class="cv-btn" href="cv.pdf" target="_blank">View CV</a>
+      <a class="hire-btn" href="#contact">Hire Me</a>
+    </div>
+  </nav>
+
+  <header id="home">
+    <h1>Aditya Anand</h1>
+    <p>Data Science Student </p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Curious and analytically driven data science student with a strong foundation in programming (C), data analysis, and embedded systems. Skilled in exploratory data analysis and predictive modeling, with hands-on experience in health tech applications such as heart attack prediction. Passionate about bridging technical expertise with real-world impact, including interdisciplinary projects in physics and hardware interfacing like car parking assistant systems. Adept at refining code for clarity and performance, and enthusiastic about entrepreneurship in innovative domains like AI and sustainable technologies. Demonstrates a proactive approach to problem-solving and a keen interest in launching meaningful ventures.</p>
+    <a class="btn" href="cv.pdf" target="_blank">Download CV</a>
+  </section>
+
+  <section id="services">
+    <h2>Skills & Services</h2>
+    <ul>
+      <li>🧠 Core Technical Skills
+        <ul>
+          <li>Exploratory Data Analysis (EDA)</li>
+          <li>Predictive Modeling & Machine Learning</li>
+          <li>Data Preprocessing & Cleaning</li>
+          <li>C Programming (with Recursion & Pointers)</li>
+          <li>Embedded Systems & Hardware Projects</li>
+          <li>Code Optimization & Performance Tuning</li>
+          <li>Project Documentation & Reporting</li>
+        </ul>
+      </li>
+      <li>🚀 Innovation & Startup Skills
+        <ul>
+          <li>Technical Ideation & Solution Design</li>
+          <li>Proof of Concept (PoC) Development</li>
+          <li>Interdisciplinary Problem Solving (Physics, Health Tech, IoT)</li>
+          <li>Entrepreneurial Strategy & Vision</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Heart Attack Prediction Model</h3>
+        <p>Developed a predictive model using health data to assess heart attack risk, applying EDA and classification algorithms.</p>
+        <a href="#" target="_blank">View Details</a>
+      </div>
+      <div class="card">
+        <h3>Car Parking Assistant System</h3>
+        <p>Designed an embedded system prototype using sensors and microcontrollers to assist in smart parking solutions.</p>
+        <a href="#" target="_blank">View Details</a>
+      </div>
+      <div class="card">
+        <h3>Physics-Based Simulation Project</h3>
+        <p>Explored interdisciplinary physics simulations integrated with hardware for experimental learning and data collection.</p>
+        <a href="#" target="_blank">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2>Reviews</h2>
+    <div class="reviews">
+      <div class="card">
+        <p>"Excellent analytical skills and great at translating data insights into impactful outcomes."</p>
+        <p>- Professor </p>
+      </div>
+      <div class="card">
+        <p>"Creative problem solver and proactive team player during our project collaboration."</p>
+        <p>- Research Partner </p>
+      </div>
+      <div class="card">
+        <p>"Highly motivated and technically sound, great potential for future data science roles."</p>
+        <p>- Mentor </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:adityaanand1415@gmail.com">adityaanand1415@gmail.com</a></p>
+    <p>LinkedIn: <a href="http://linkedin.com/in/aditya-anand-8b3b80287" target="_blank">http://linkedin.com/in/aditya-anand-8b3b80287</a></p>
+    <p>GitHub: <a href="https://github.com/Adityaanand14/work.git" target="_blank">https://github.com/Adityaanand14/work.git</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 . All rights reserved.
+  </footer>
+
+</body>
+</html>
